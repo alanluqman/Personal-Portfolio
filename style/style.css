@@ -1,14 +1,16 @@
 
 :root {
-  --color-primary: #FF6B00;
-  --color-secondary: #FFF5E1;
+  --color-primary: #ff6b00;
+  --color-secondary: #fff5e1;
   --color-body: #000;
-  --color-whithe:#fff;
-  --color-tool-bar-background: #3C3A39;
-  --color-heading-background: #1C1A19;
+  --color-whithe: #fff;
+  --color-tool-bar-background:#3c3a39;
+  --color-heading-background: #1c1a19;
 }
 
-*,*::after,*::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +22,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -42,7 +44,7 @@ body {
   color: var(--color-whithe);
   display: flex;
   flex-grow: 0;
-  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -55,7 +57,7 @@ body {
 
 .menu-button {
   align-items: flex-start;
-  border-radius: 0.8rem; 
+  border-radius: 0.8rem;
   align-self: center;
   height: 4rem;
   padding: 0.8rem;
@@ -79,7 +81,6 @@ body {
 .primary-text {
   color: var(--color-primary);
   flex-grow: 0;
-  flex: none;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 5.6rem;
   font-style: normal;
@@ -92,7 +93,7 @@ body {
 .support-text {
   width: 32.7rem;
   height: 2.7rem;
-  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 2.4rem;
@@ -145,5 +146,5 @@ body {
 .hero-image {
   position: absolute;
   bottom: 18rem;
-  right: 0rem;
+  left: 24.2rem;
 }
