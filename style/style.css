@@ -1,0 +1,149 @@
+
+:root {
+  --color-primary: #FF6B00;
+  --color-secondary: #FFF5E1;
+  --color-body: #000;
+  --color-whithe:#fff;
+  --color-tool-bar-background: #3C3A39;
+  --color-heading-background: #1C1A19;
+}
+
+*,*::after,*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  color: var(--color-whithe);
+}
+
+.tool-bar {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 37.5rem;
+  height: 4.4rem;
+  padding: 0 2.4rem;
+  background-color: var(--color-tool-bar-background);
+}
+
+.tool-bar-logo {
+  align-items: center;
+  color: var(--color-whithe);
+  display: flex;
+  flex-grow: 0;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  left: 2.4rem;
+  line-height: 2.4rem;
+  order: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.menu-button {
+  align-items: flex-start;
+  border-radius: 0.8rem; 
+  align-self: center;
+  height: 4rem;
+  padding: 0.8rem;
+  width: 4rem;
+}
+
+.heading {
+  width: 100vw;
+  height: 59rem;
+  background-color: var(--color-heading-background);
+}
+
+.heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 12rem 2.4rem;
+  gap: 1.2rem;
+}
+
+.primary-text {
+  color: var(--color-primary);
+  flex-grow: 0;
+  flex: none;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 5.6rem;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.37px;
+  line-height: 6.4rem;
+  order: 0;
+}
+
+.support-text {
+  width: 32.7rem;
+  height: 2.7rem;
+  font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.description {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: var(--color-whithe);
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  width: 20rem;
+  height: 4rem;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.social-media-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.8rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.hero-image {
+  position: absolute;
+  bottom: 18rem;
+  right: 0rem;
+}
