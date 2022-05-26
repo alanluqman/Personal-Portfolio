@@ -22,7 +22,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
@@ -44,7 +44,7 @@ body {
   color: var(--color-whithe);
   display: flex;
   flex-grow: 0;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Roboto';
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -53,6 +53,10 @@ body {
   order: 0;
   text-align: center;
   text-decoration: none;
+}
+
+.header-navigation {
+  display: flex;
 }
 
 .menu-button {
@@ -81,7 +85,7 @@ body {
 .primary-text {
   color: var(--color-primary);
   flex-grow: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Crete Round';
   font-size: 5.6rem;
   font-style: normal;
   font-weight: 400;
@@ -93,7 +97,7 @@ body {
 .support-text {
   width: 32.7rem;
   height: 2.7rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   font-size: 2.4rem;
@@ -107,7 +111,7 @@ body {
 }
 
 .description {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
