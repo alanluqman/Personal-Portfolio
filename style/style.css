@@ -364,8 +364,7 @@ body {
 }
 
 .about-me-hero {
-
-  position:relative;
+  position: relative;
   bottom: 8rem;
   left: 15rem;
   flex: none;
@@ -374,7 +373,7 @@ body {
 }
 
 .separator {
-  position:relative;
+  position: relative;
   bottom: 9rem;
   flex: none;
   order: 4;
@@ -393,13 +392,14 @@ body {
   justify-content: center;
 }
 
-.feature-title  {
+.feature-title {
   display: flex;
   flex-direction: row;
   column-gap: 1.2rem;
   justify-content: center;
   margin: 3rem 0;
 }
+
 .feature-title-heading {
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
