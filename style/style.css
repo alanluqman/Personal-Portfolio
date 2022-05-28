@@ -1,11 +1,12 @@
 
 :root {
-  --color-primary: #ff6b00;
+  --color-primary: #1c1a19;
+  --color-sccent: #ff6b00;
   --color-secondary: #fff5e1;
   --color-body: #000;
-  --color-whithe: #fff;
+  --color-white: #fff;
   --color-tool-bar-background: #3c3a39;
-  --color-heading-background: #1c1a19;
+  --color-border: #8993a4;
 }
 
 *,
@@ -18,6 +19,7 @@
 
 html {
   font-size: 62.5%;
+  color: var(--color-white);
 }
 
 body {
@@ -26,7 +28,7 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
-  color: var(--color-whithe);
+  color: var(--color-body);
 }
 
 .tool-bar {
@@ -41,7 +43,7 @@ body {
 
 .tool-bar-logo {
   align-items: center;
-  color: var(--color-whithe);
+  color: var(--color-white);
   display: flex;
   flex-grow: 0;
   font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -71,7 +73,7 @@ body {
 .heading {
   width: 37.5rem;
   height: 59rem;
-  background-color: var(--color-heading-background);
+  background-color: var(--color-primary);
 }
 
 .heading-container {
@@ -83,7 +85,7 @@ body {
 }
 
 .primary-text {
-  color: var(--color-primary);
+  color: var(--color-sccent);
   flex-grow: 0;
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
   font-size: 5.6rem;
@@ -111,12 +113,12 @@ body {
 }
 
 .description {
-  font-family: 'Poppins'Arial, Helvetica, sans-serif;
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
-  color: var(--color-whithe);
+  color: var(--color-white);
   flex: none;
   order: 2;
   flex-grow: 0;
@@ -151,4 +153,275 @@ body {
   position: relative;
   bottom: 28rem;
   left: 24.25rem;
+}
+
+.work-section-container {
+  width: 37.5rem;
+  padding: 12rem 2.4rem;
+}
+
+.title-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 7rem;
+}
+
+.title-message {
+  height: 8.3rem;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--color-primary);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.title-separator {
+  width: inherit;
+}
+
+.image {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.title-post {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+  gap: 1.2rem;
+  width: 32.7rem;
+  height: 30.7rem;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.post-heading {
+  font-size: 3.2rem;
+  height: 36px;
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 44px;
+  display: flex;
+  align-items: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.post-description {
+  width: 32.7rem;
+  height: 14.7rem;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.tag-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 12px;
+  width: 297px;
+  height: 40px;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.tag-items {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 1.2rem;
+  border: 1px solid var(--color-border);
+}
+
+.seeProject-button {
+  text-decoration: none;
+  color: var(--color-white);
+  padding: 1.2rem;
+  font-size: 1.7rem;
+  font-weight: 700;
+  background-color: var(--color-sccent);
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.work-card {
+  width: 32.7rem;
+  height: 38.6rem;
+  display: flex;
+  margin-bottom: 2.4rem;
+  flex-direction: column;
+  background-image: url(../images/project-background.svg);
+}
+
+.info-holder {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.6rem;
+  row-gap: 1.2rem;
+  margin-top: auto;
+}
+
+.project-heading {
+  font-family: 'Crete Round', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.card-description {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.card-feature-items {
+  list-style-type: none;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 1.2rem;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.button-section {
+  width: 32.7rem;
+  height: 4.8rem;
+  display: flex;
+  background: var(--color-sccent);
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.2rem;
+}
+
+.card-button {
+  text-decoration: none;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+.white-font {
+  color: var(--color-white);
+}
+
+.background-black {
+  background-color: var(--color-primary);
+  row-gap: 2.4rem;
+}
+
+.about-me-section {
+  width: 37.5rem;
+  padding: 12rem 2.4rem;
+}
+
+.accent-color {
+  color: var(--color-sccent);
+}
+
+.about-me {
+  font-size: 6.2rem;
+}
+
+.get-my-resume {
+  padding: 1.2rem;
+  background-color: var(--color-sccent);
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  width: fit-content;
+}
+
+.get-my-resume:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.get-my-resume:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: 0;
+}
+
+.about-me-hero {
+  position: relative;
+  bottom: 10rem;
+  left: 19rem;
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.separator {
+  position: relative;
+  bottom: 9rem;
+  flex: none;
+  order: 4;
+  flex-grow: 0;
+}
+
+.about-me-features {
+  flex: none;
+  order: 5;
+  flex-grow: 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feature-title {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1.2rem;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.feature-title-heading {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.feature-items {
+  list-style-type: none;
+  margin: 3.2rem 0;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
 }
