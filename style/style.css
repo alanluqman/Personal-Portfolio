@@ -297,7 +297,6 @@ body {
 }
 
 .card-description {
-  width: inherit;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -342,7 +341,8 @@ body {
 }
 
 .about-me-section {
-  margin: 12rem 0;
+  width: 37.5rem;
+  padding: 12rem 2.4rem;
 }
 
 .accent-color {
@@ -351,7 +351,6 @@ body {
 
 .about-me {
   font-size: 6.2rem;
-  padding-top: 12rem;
 }
 
 .get-my-resume {
@@ -363,10 +362,22 @@ body {
   width: fit-content;
 }
 
+.get-my-resume:hover {
+  background-color: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.get-my-resume:active {
+  background-color: #e05304;
+  color: #f4f1f0;
+  border: 0;
+}
+
 .about-me-hero {
   position: relative;
-  bottom: 8rem;
-  left: 15rem;
+  bottom: 10rem;
+  left: 19rem;
   flex: none;
   order: 3;
   flex-grow: 0;
