@@ -275,7 +275,6 @@ body {
   margin-bottom: 2.4rem;
   flex-direction: column;
   background-image: url(../images/project-background.svg);
-  
 }
 
 .info-holder {
@@ -324,8 +323,8 @@ body {
   display: flex;
   background: var(--color-sccent);
   justify-content: center;
-  align-items: center; 
-  margin-top: 2.2rem; 
+  align-items: center;
+  margin-top: 2.2rem;
 }
 
 .card-button {
@@ -333,8 +332,6 @@ body {
   font-size: 1.7rem;
   font-weight: 700;
 }
-
-
 
 .white-font {
   color: var(--color-white);
