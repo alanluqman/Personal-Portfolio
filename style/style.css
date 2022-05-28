@@ -198,7 +198,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 1.2rem;
   width: 32.7rem;
   height: 30.7rem;
@@ -207,7 +207,7 @@ body {
   flex-grow: 0;
 }
 
-.post-heading{
+.post-heading {
   font-size: 3.2rem;
   height: 36px;
   font-family: 'Crete Round', Arial, Helvetica, sans-serif;
@@ -229,17 +229,17 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   flex: none;
   order: 1;
   flex-grow: 0;
 }
 
-.tag-list{
+.tag-list {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 297px;
   height: 40px;
