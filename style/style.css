@@ -425,3 +425,17 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
 }
+
+.contant-container {
+  background: #E5E5E5;
+  width: 37.5rem;
+}
+
+.contant-container > p {
+  height: 216px;
+  width: 327px;
+  left: 0px;
+  top: 0px;
+  border-radius: undefinedpx;
+
+}
