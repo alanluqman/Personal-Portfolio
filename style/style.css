@@ -427,7 +427,7 @@ body {
 }
 
 .contant-container {
-  background: #E5E5E5;
+  background: #e5e5e5;
   width: 37.5rem;
 }
 
@@ -437,5 +437,10 @@ body {
   left: 0px;
   top: 0px;
   border-radius: undefinedpx;
-
+  text-align: center;
+  padding-top: 12rem;
+  line-height: 4.4rem;
+  color: #172b4d;
+  font-weight: 700;
+  font-size: 3.2rem;
 }
