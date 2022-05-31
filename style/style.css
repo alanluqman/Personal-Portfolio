@@ -448,13 +448,13 @@ body {
 
 .form-heading {
   margin-bottom: 4rem;
-  font-family: 'Inter',Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.4rem;
   text-align: center;
-  color: #172B4D;
+  color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
