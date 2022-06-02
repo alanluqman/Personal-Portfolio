@@ -124,7 +124,6 @@ body {
   flex-direction: column;
   padding: 12rem 2.4rem;
   row-gap: 1.2rem;
-  min-width: 37.5rem;
 }
 
 .heading-text {
@@ -281,7 +280,6 @@ body {
 .work-section-container {
   width: 100%;
   padding: 12rem 2.4rem;
-  margin: auto;
 }
 
 .title-card {
@@ -399,7 +397,7 @@ body {
 }
 
 .work-card {
-  width: 32.7rem;
+  width: inherit;
   height: 38.6rem;
   display: flex;
   flex-direction: column;
@@ -569,7 +567,7 @@ body {
 .about-me-hero {
   position: relative;
   bottom: 10rem;
-  left: 19rem;
+  left: 17.5rem;
   flex: none;
   order: 3;
   flex-grow: 0;
@@ -628,11 +626,11 @@ body {
   }
 
   .about-me-heading-holder {
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .about-me-features {
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .about-me-hero {
@@ -650,16 +648,24 @@ body {
 /* contact me / footer */
 
 .footer-container {
-  width: 37.5rem;
+  width: 100%;
+  padding-top: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
 }
 
+.contact-me-holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding-bottom: 5rem;
+  row-gap: 5rem;
+}
+
 .form {
-  width: 32.7rem;
-  padding: 12rem 0;
+  width: 100%;
+  padding: 0 2.4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -667,17 +673,23 @@ body {
 }
 
 .form-heading {
-  margin-bottom: 4rem;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4.4rem;
   text-align: center;
+  padding: 0 2.4rem;
   color: #172b4d;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
+
+.fullname {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .form-input {
@@ -687,6 +699,10 @@ body {
   border: 0;
   border-bottom: 1px solid #dbd8d7;
   outline: none;
+}
+
+.lastname {
+  display: none;
 }
 
 .form-input:focus {
@@ -717,4 +733,28 @@ body {
   display: flex;
   justify-content: center;
   border-top: 1px solid #dbd8d7;
+}
+
+@media screen and (min-width: 768px) {
+  .contact-me-holder {
+    grid-template-columns: 0.7fr 1fr;
+    padding: 13rem;
+  }
+
+  .form {
+    align-items: flex-start;
+  }
+
+  .fullname {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .lastname {
+    display: block;
+  }
+
+  .desktop-view {
+    flex-direction: row;
+  }
 }

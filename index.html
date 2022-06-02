@@ -301,16 +301,26 @@
         </div>
     </section>
     <footer class="footer-container" id="contact">
-        <form action="https://formspree.io/f/xqknnwvy" id="contact_me" method="post" class="form">
-            <h2 class="form-heading">I'm always interested in hearing about new projects,
-                    so if you'd like to chat please get in touch</h2>
-            <input class="form-input" type="text" name="username" id="username" maxlength="30" placeholder="Full name" required>
-            <input class="form-input" type="email" name="email" id="email" placeholder="Email address" required>
-            <textarea class="form-message" name="message" id="message" cols="30" rows="5" maxlength="500" placeholder="Enter text here" required></textarea>
-            <button type="submit" class="card-button get-my-resume white-font">Get in touch</button>
-        </form>
-        <div class="footer-social-media">
-            <ul class="social-media-list">
+            <div class="contact-me-holder">
+                <div>
+                    <h2 class="form-heading">I'm always interested in hearing about new projects,
+                        so if you'd like to chat please get in touch</h2>
+                </div>
+                <div class="form-container">
+                    <form action="https://formspree.io/f/xqknnwvy" id="contact_me" method="post" class="form">
+                        <div class="fullname">
+                            <input class="form-input firstname" type="text" name="firstname" id="firstname" maxlength="30" placeholder="First Name" required>
+                            <input class="form-input lastname" type="text" name="lastname" id="lastname" maxlength="30" placeholder="Last Name" required>
+                        </div>
+                        <input class="form-input" type="email" name="email" id="email" placeholder="Email address" required>
+                        <textarea class="form-message" name="message" id="message" cols="30" rows="5" maxlength="500" placeholder="Enter text here" required></textarea>
+                        <button type="submit" class="card-button get-my-resume white-font">Get in touch</button>
+                    </form>
+                </div>
+            </div>
+
+        <div class="footer-social-media ">
+            <ul class="social-media-list desktop-view">
                 <li class="social-media-icon footer-icon-color">
                     <a href="https://github.com/alanluqman">
                         <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
