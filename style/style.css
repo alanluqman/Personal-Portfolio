@@ -279,8 +279,9 @@ body {
 /* Work section */
 
 .work-section-container {
-  width: 37.5rem;
+  width: 100%;
   padding: 12rem 2.4rem;
+  margin: auto;
 }
 
 .title-card {
@@ -391,12 +392,18 @@ body {
   flex-grow: 0;
 }
 
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1.4rem;
+}
+
 .work-card {
   width: 32.7rem;
   height: 38.6rem;
   display: flex;
-  margin-bottom: 2.4rem;
   flex-direction: column;
+  row-gap: 2.2rem;
   background-image: url(../images/project-background.svg);
 }
 
@@ -439,25 +446,59 @@ body {
 }
 
 .button-section {
-  width: 32.7rem;
+  width: 100%;
   height: 4.8rem;
   display: flex;
-  background: var(--color-sccent);
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.2rem;
 }
 
 .card-button {
   text-decoration: none;
+  text-align: center;
+  padding: 1.2rem 0;
+  width: 100%;
   font-size: 1.7rem;
   font-weight: 700;
+  align-self: center;
+  background-color: var(--color-sccent);
   cursor: pointer;
 }
 
 .white-font {
   color: var(--color-white);
 }
+
+@media screen and (min-width: 768px) {
+  .work-section-container {
+    padding: 12rem 14.35rem;
+  }
+
+  .title-card {
+    flex-direction: row;
+  }
+
+  .title-separator {
+    width: 100%;
+    align-self: center;
+  }
+
+  .card-holder {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 3.7rem;
+  }
+
+  .work-card {
+    width: 100%;
+  }
+
+  .card-button:hover {
+    color: var(--color-sccent);
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-sccent);
+  }
+}
+
+/* About me */
 
 .background-black {
   background-color: var(--color-primary);
