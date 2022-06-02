@@ -699,7 +699,7 @@ body {
   flex-grow: 0;
 }
 
-.fullname {
+.full-name {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
@@ -713,6 +713,10 @@ body {
   border-bottom: 1px solid #dbd8d7;
   outline: none;
 }
+
+.firstname {
+    display: none;
+  }
 
 .lastname {
   display: none;
@@ -758,9 +762,17 @@ body {
     align-items: flex-start;
   }
 
-  .fullname {
+  .full-name {
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+  }
+
+  .fullname {
+    display: none;
+  }
+
+  .firstname {
+    display: block;
   }
 
   .lastname {
