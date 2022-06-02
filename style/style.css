@@ -458,7 +458,6 @@ body {
   width: 100%;
   font-size: 1.7rem;
   font-weight: 700;
-  align-self: center;
   background-color: var(--color-sccent);
   cursor: pointer;
 }
@@ -502,30 +501,57 @@ body {
 
 .background-black {
   background-color: var(--color-primary);
-  row-gap: 2.4rem;
 }
 
 .about-me-section {
-  width: 37.5rem;
+  width: 100%;
   padding: 12rem 2.4rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
 }
 
 .accent-color {
   color: var(--color-sccent);
 }
 
+.about-me-heading-holder {
+  display: grid;
+  grid-template-columns: 1fr;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about-me-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.4rem;
+}
+
 .about-me {
   font-size: 6.2rem;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.about-description {
+  flex: none;
+  order: 1;
+  flex-grow: 0;
 }
 
 .get-my-resume {
   padding: 1.2rem;
   background-color: var(--color-sccent);
   border: 1px solid var(--color-sccent);
-  flex: none;
-  order: 1;
-  flex-grow: 0;
   width: fit-content;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
 }
 
 .get-my-resume:hover {
@@ -549,24 +575,27 @@ body {
   flex-grow: 0;
 }
 
+.about-me-hero2 {
+  display: none;
+}
+
 .separator {
-  position: relative;
-  bottom: 9rem;
   flex: none;
-  order: 4;
+  order: 1;
   flex-grow: 0;
 }
 
 .about-me-features {
+  display: grid;
+  grid-template-columns: 1fr;
   flex: none;
-  order: 5;
-  flex-grow: 0;
+  order: 2;
+  flex-grow: 2;
 }
 
 .feature {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 .feature-title {
@@ -591,6 +620,34 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
 }
+
+@media screen and (min-width: 768px) {
+  .about-me-section {
+    padding: 12rem 14.35rem;
+    row-gap: 4.8rem;
+  }
+
+  .about-me-heading-holder {
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .about-me-features {
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .about-me-hero {
+    display: none;
+  }
+
+  .about-me-hero2 {
+    display: block;
+    width: 100%;
+    position: relative;
+    right: -14.5rem;
+  }
+}
+
+/* contact me / footer */
 
 .footer-container {
   width: 37.5rem;
