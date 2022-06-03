@@ -782,7 +782,6 @@ body {
 .form-input:focus {
   border-bottom: 1px solid var(--color-sccent);
   border-bottom-width: 100%;
-  
 }
 
 .form-message {
