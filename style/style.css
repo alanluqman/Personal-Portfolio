@@ -473,6 +473,15 @@ body {
   color: var(--color-white);
 }
 
+@media screen and (min-width: 768px) {
+  .card-holder {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.4rem;
+    row-gap: 3.7rem;
+    margin: auto;
+  }
+}
+
 @media screen and (min-width: 940px) {
   .work-section-container {
     margin: auto;
