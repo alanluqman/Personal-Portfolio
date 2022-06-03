@@ -53,7 +53,7 @@ body {
   color: var(--color-white);
   display: flex;
   flex-grow: 0;
-  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
@@ -79,6 +79,7 @@ body {
 }
 
 .wide-navigation-items a {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
   color: var(--color-white);
   padding: 1.5rem;
   text-decoration: none;
@@ -211,7 +212,7 @@ body {
   display: none;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 940px) {
   .heading-container {
     flex-direction: row;
     padding-left: 2rem;
@@ -327,7 +328,7 @@ body {
   align-items: flex-start;
   padding: 0;
   gap: 1.2rem;
-  width: fit-content;
+  width: 100%;
   height: 30.7rem;
   flex: none;
   order: 1;
@@ -404,6 +405,7 @@ body {
 
 .work-card {
   width: 100%;
+  max-width: 40rem;
   height: 38.6rem;
   margin: auto;
   display: flex;
@@ -471,14 +473,18 @@ body {
   color: var(--color-white);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 940px) {
   .work-section-container {
     margin: auto;
-    padding: 12rem 14.35rem;
+    padding: 12rem 3rem;
   }
 
   .title-card {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .title-card:nth-child(2) {
+    grid-template-columns: 3fr 1fr;
   }
 
   .title-separator {
@@ -499,6 +505,14 @@ body {
 
   .work-card {
     width: 100%;
+  }
+
+  .button-section {
+    display: none;
+  }
+
+  .work-card:hover > .button-section {
+    display: flex;
   }
 
   .card-button:hover {
@@ -579,11 +593,9 @@ body {
 
 .about-me-hero {
   position: relative;
+  float: right;
+  right: -2.4rem;
   bottom: 10rem;
-  left: 17.5rem;
-  flex: none;
-  order: 3;
-  flex-grow: 0;
 }
 
 .about-me-hero2 {
@@ -632,7 +644,7 @@ body {
   font-weight: 400;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 940px) {
   .about-me-section {
     padding: 12rem 14.35rem;
     row-gap: 4.8rem;
@@ -760,6 +772,10 @@ body {
 
   .form {
     align-items: flex-start;
+  }
+
+  .form-heading {
+    text-align: left;
   }
 
   .full-name {
