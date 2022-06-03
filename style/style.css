@@ -79,6 +79,7 @@ body {
   animation-name: logo-motion;
   animation-duration: 4s;
   animation-iteration-count: 1;
+  animation-delay: 0.5s;
   order: 0;
   text-align: center;
   text-decoration: none;
