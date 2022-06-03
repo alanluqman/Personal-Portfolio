@@ -33,6 +33,23 @@ body {
   margin: auto;
 }
 
+@keyframes logo-motion {
+  from {
+    padding-left: 0;
+    color: var(--color-white);
+  }
+
+  50% {
+    padding-left: 30%;
+    color: aqua;
+  }
+
+  to {
+    padding-left: 0;
+    color: var(--color-white);
+  }
+}
+
 .tool-bar {
   width: 100%;
   height: 5.5rem;
@@ -59,6 +76,9 @@ body {
   font-weight: 700;
   left: 2.4rem;
   line-height: 2.4rem;
+  animation-name: logo-motion;
+  animation-duration: 4s;
+  animation-iteration-count: 1;
   order: 0;
   text-align: center;
   text-decoration: none;
@@ -84,10 +104,12 @@ body {
   padding: 1.5rem;
   text-decoration: none;
   align-items: center;
+  transition: all 0.3s ease;
 }
 
 .wide-navigation-items a:hover {
-  color: var(--color-sccent);
+  color: aqua;
+  padding-top: 0;
 }
 
 .menu-button {
@@ -110,6 +132,15 @@ body {
 
   .wide-navigation {
     display: flex;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  @keyframes logo-motion {
+    50% {
+      padding-left: 40%;
+      color: aqua;
+    }
   }
 }
 
@@ -514,14 +545,16 @@ body {
 
   .work-card {
     width: 100%;
+    overflow: hidden;
   }
 
   .button-section {
-    display: none;
+    max-height: 0;
+    transition: all 0.5s ease;
   }
 
   .work-card:hover > .button-section {
-    display: flex;
+    max-height: 100%;
   }
 
   .card-button:hover {
