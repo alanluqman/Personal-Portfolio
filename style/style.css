@@ -109,7 +109,7 @@ body {
 }
 
 .wide-navigation-items a:hover {
-  color: aqua;
+  color: var(--color-sccent);
   padding-top: 0;
 }
 
@@ -140,7 +140,7 @@ body {
   @keyframes logo-motion {
     50% {
       padding-left: 40%;
-      color: aqua;
+      color: var(--color-sccent);
     }
   }
 }
@@ -762,11 +762,13 @@ body {
 
 .form-input {
   width: 100%;
+  border-width: 0;
   font-size: 1.5rem;
   padding: 1.4rem;
   border: 0;
   border-bottom: 1px solid #dbd8d7;
   outline: none;
+  transition: all 3s ease-out;
 }
 
 .firstname {
@@ -779,6 +781,8 @@ body {
 
 .form-input:focus {
   border-bottom: 1px solid var(--color-sccent);
+  border-bottom-width: 100%;
+  
 }
 
 .form-message {
@@ -789,6 +793,7 @@ body {
   background-color: #fbf8f7;
   border: 0;
   outline: none;
+  transition: all 1s ease;
 }
 
 .form-message::placeholder {
