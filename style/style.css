@@ -505,8 +505,8 @@ body {
   color: var(--color-primary);
 }
 
-.white-font{
-color: var(--color-white);
+.white-font {
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 768px) {
