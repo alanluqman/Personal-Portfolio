@@ -418,7 +418,7 @@ body {
 
 .seeProject-button {
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-primary);
   padding: 1.2rem;
   font-size: 1.7rem;
   font-weight: 700;
@@ -499,6 +499,10 @@ body {
   font-weight: 700;
   background-color: var(--color-sccent);
   cursor: pointer;
+}
+
+.dark-font {
+  color: var(--color-primary);
 }
 
 .white-font {
