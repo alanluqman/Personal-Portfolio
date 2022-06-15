@@ -143,22 +143,19 @@
         </div>
     </section>
     <!-- popup window -->
-    <div class="popup-window">
+    <div id="popUp" class="popup-window">
         <div class="popup-holder">
             <div class="popup-close-btn-holder"> <img id="closePopup" src="images/X-button.svg" alt="close"></div>
-            <h1 class="project-heading">Multi Post Stories</h1>
-            <ul class="popup-tag-list">
+            <h1 id="popup-header" class="project-heading"></h1>
+            <ul id="popup-feature" class="popup-tag-list">
                 <li class="card-feature-items popup-feature">html</li>
                 <li class="card-feature-items popup-feature">bootstrap</li>
                 <li class="card-feature-items popup-feature">Ruby</li>
             </ul>
-            <div>
-                <img class="popup-image" src="images/img-placeholder.svg" alt="post image">
+            <div class="popup-info">
+                <img id="popup-image" class="popup-image" src="" alt="post image">
                 <div class="popup-info-holder">
-                    <p class="popup-description">A daily selection of privately personalized reads;
-                        no accounts or sign-ups required. has been
-                        the industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a standard dummy text.
+                    <p id="popup-description" class="popup-description">
                     </p>
                     <div class="popup-btn-holder">
                         <a id="seeLivePopup" class="popup-btn" href="">See Live&nbsp;
@@ -183,6 +180,7 @@
             </div>
         </div>
     </div>
+    <!-- work section -->
     <section class="work-section-container" id="portfolio">
         <div class="title-card">
             <h1 class="title-message">My Recent Works</h1>
@@ -206,7 +204,7 @@
                     <li class="tag-items">bootstrap</li>
                     <li class="tag-items">Ruby</li>
                 </ul>
-                <a class="seeProject-button" href="#">See Project</a>
+                <a id="seeProject" class="pop seeProject-button" href="#popUp">See Project</a>
             </div>
         </div>
         <div class="card-holder">
@@ -223,7 +221,7 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
             <div class="work-card">
@@ -239,7 +237,7 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
             <div class="work-card">
@@ -255,7 +253,7 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
             <div class="work-card">
@@ -271,7 +269,7 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
             <div class="work-card">
@@ -287,7 +285,7 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
             <div class="work-card">
@@ -303,11 +301,12 @@
                     </ul>
                 </div>
                 <div class="button-section">
-                    <a class="card-button dark-font" href="#">See Project</a>
+                    <a class="pop card-button dark-font" href="#popUp">See Project</a>
                 </div>
             </div>
         </div>
     </section>
+    <!-- About me section -->
     <section class="about-me-container about-me-section background-black" id="about">
         <div class="about-me-heading-holder">
             <div class="about-me-text">
@@ -425,7 +424,6 @@
                 </form>
             </div>
         </div>
-
         <div class="footer-social-media ">
             <ul class="social-media-list desktop-view">
                 <li class="social-media-icon footer-icon-color">
