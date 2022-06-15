@@ -28,8 +28,7 @@ function popUp() {
 
 const closePopUpWindow = document.querySelector('#closePopup');
 closePopUpWindow.addEventListener('click', popUp);
-
 const seeProject = document.querySelectorAll('.pop');
-for (const item of seeProject) {
-  item.addEventListener('click', popUp);
-}
+seeProject.forEach((element) => {
+  element.addEventListener('click', popUp);
+});
