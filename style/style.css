@@ -449,6 +449,26 @@ body {
   border: 1px solid var(--color-sccent);
 }
 
+@media screen and (min-width: 768px) {
+  .popup-info {
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .popup-btn-holder {
+    justify-content: left;
+    column-gap: 2rem;
+  }
+
+  .popup-holder {
+    padding: 3rem;
+  }
+
+  .popup-info-holder {
+    row-gap: 4rem;
+  }
+}
+
 /* Work section */
 
 .work-section-container {
