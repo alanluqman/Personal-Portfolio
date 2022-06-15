@@ -14,16 +14,16 @@ const projects = [
     featureList: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://alanluqman.github.io/Personal-Portfolio/',
     seeSource: 'https://github.com/alanluqman/Personal-Portfolio',
-  }
+  },
 ];
 const popUpWindow = document.querySelector('.popup-window');
 function popUp() {
   popUpWindow.classList.toggle('popUp');
-  document.querySelector('#popup-header').innerHTML= projects[0].title;
-  document.querySelector('#popup-description').innerHTML= projects[0].description;
-  document.querySelector('#popup-image').src=''+ projects[0].image;
-  document.querySelector('#seeLivePopup').href=projects[0].seeLive;
-  document.querySelector('#seeSourcePopup').href=projects[0].seeSource;
+  document.querySelector('#popup-header').innerHTML = projects[0].title;
+  document.querySelector('#popup-description').innerHTML = projects[0].description;
+  document.querySelector('#popup-image').src = `${projects[0].image}`;
+  document.querySelector('#seeLivePopup').href = projects[0].seeLive;
+  document.querySelector('#seeSourcePopup').href = projects[0].seeSource;
 }
 
 const closePopUpWindow = document.querySelector('#closePopup');
