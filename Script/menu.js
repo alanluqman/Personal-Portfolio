@@ -6,6 +6,7 @@ const menuBtn = document.querySelector('#menuBtn');
 menuBtn.addEventListener('click', collapsible);
 const xBtn = document.querySelector('#xBtn');
 xBtn.addEventListener('click', collapsible);
+// popup-window.
 const projects = [
   {
     title: 'Multi Post Stories',
@@ -83,4 +84,34 @@ seeProject.forEach((element) => {
   element.addEventListener('click', () => {
     popUp(element.dataset.id);
   });
+});
+// form validation.
+const emailEl = document.querySelector('#email');
+const isEmailValid = (email) => {
+  
+  return re.test(email);
+};
+const checkEmail = () => {
+  let valid = false;
+  const email = emailEl.value.trim();
+  if (!isEmailValid(email)) {
+    document.querySelector('#errorCheck').innerHTML= '* Invalid Email entered ! please Enter valid email.';
+  } else {
+    document.querySelector('#errorCheck').innerHTML= '';
+    valid = true;
+  }
+  return valid;
+};
+const form = document.querySelector('#contact_me');
+form.addEventListener('submit', function (e) {
+    // prevent the form from submitting
+    e.preventDefault();
+    // validate forms
+    let isEmailValid = checkEmail();
+    let isFormValid = isEmailValid;
+    // submit to the server if the form is valid
+    if (isFormValid) {
+      console.log('form submited');
+      form.submit();
+    }
 });

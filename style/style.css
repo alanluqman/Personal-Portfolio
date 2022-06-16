@@ -945,7 +945,7 @@ body {
   border: 0;
   border-bottom: 1px solid #dbd8d7;
   outline: none;
-  transition: all 3s ease-out;
+  transition: all 0.5s ease-out;
 }
 
 .firstname {
@@ -959,6 +959,10 @@ body {
 .form-input:focus {
   border-bottom: 1px solid var(--color-sccent);
   border-bottom-width: 100%;
+}
+
+.errorMessage {
+  color: red;
 }
 
 .form-message {
@@ -1003,12 +1007,12 @@ body {
   }
 
   .full-name {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     column-gap: 2rem;
   }
 
   .fullname {
-    display: none;
+    display: block;
   }
 
   .firstname {
