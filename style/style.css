@@ -353,6 +353,7 @@ body {
 
 /* popup window */
 .popup-window {
+  z-index: 10;
   position: fixed;
   top: 0;
   padding: 3rem 0;
@@ -374,8 +375,8 @@ body {
 .popup-holder {
   width: 90%;
   border-radius: 0.3rem;
-  height: 90%;
-  overflow-y: scroll;
+  height: fit-content;
+  margin-top: 10rem;
   background-color: var(--color-white);
   padding: 1rem;
   display: flex;
@@ -394,6 +395,7 @@ body {
 
 .popup-tag-list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   padding: 0;
@@ -430,6 +432,8 @@ body {
 
 .popup-btn-holder {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
   justify-content: space-around;
 }
 
@@ -451,7 +455,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .popup-info {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     column-gap: 2rem;
   }
 
@@ -462,10 +467,18 @@ body {
 
   .popup-holder {
     padding: 3rem;
+    margin-top: 10rem;
   }
 
   .popup-info-holder {
     row-gap: 4rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .popup-holder {
+    margin-top: 20rem;
   }
 }
 
@@ -718,7 +731,7 @@ body {
     transition: all 0.5s ease;
   }
 
-  .work-card:hover > .button-section {
+  .work-card:hover>.button-section {
     max-height: 100%;
   }
 
