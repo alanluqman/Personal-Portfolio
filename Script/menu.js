@@ -73,11 +73,9 @@ function popUp(index) {
   document.querySelector('#seeLivePopup').href = projects[index].seeLive;
   document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
 }
-
 function popUpClose() {
 popUpWindow.classList.remove('popUp');
 }
-
 const closePopUpWindow = document.querySelector('#closePopup');
 closePopUpWindow.addEventListener('click', popUpClose);
 const seeProject = document.querySelectorAll('.pop');
