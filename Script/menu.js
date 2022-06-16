@@ -88,7 +88,7 @@ seeProject.forEach((element) => {
 // form validation.
 const emailEl = document.querySelector('#email');
 const isEmailValid = (email) => {
-  const re = /^[a-z]+(([a-z]+\.?([0-9]+)?\.?))+([a-z0-9])@([a-z]+\.?)+[a-z]{2,}$/;
+  const re = /^[a-z]+(([a-z]+([0-9]+)?\.?([0-9]+)?\.?))+([a-z0-9])@([a-z]+\.?)+[a-z]{2,}$/;
   return re.test(email);
 };
 const checkEmail = () => {
