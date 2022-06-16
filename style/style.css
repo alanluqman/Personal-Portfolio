@@ -41,7 +41,7 @@ body {
 
   50% {
     padding-left: 30%;
-    color: aqua;
+    color: var(--color-sccent);
   }
 
   to {
@@ -731,7 +731,7 @@ body {
     transition: all 0.5s ease;
   }
 
-  .work-card:hover > .button-section {
+  .work-card:hover>.button-section {
     max-height: 100%;
   }
 
