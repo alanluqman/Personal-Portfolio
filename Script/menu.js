@@ -108,9 +108,8 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   // validate forms
   const isEmailValid = checkEmail();
-  const isFormValid = isEmailValid;
   // submit to the server if the form is valid
-  if (isFormValid) {
+  if (isEmailValid) {
     form.submit();
   }
 });
