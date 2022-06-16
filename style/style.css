@@ -351,6 +351,137 @@ body {
   }
 }
 
+/* popup window */
+.popup-window {
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  padding: 3rem 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(0.7rem);
+  transition: all 0.5s ease;
+  overflow: scroll;
+}
+
+.popUp {
+  display: flex;
+}
+
+.popup-holder {
+  width: 90%;
+  border-radius: 0.3rem;
+  height: fit-content;
+  margin-top: 10rem;
+  background-color: var(--color-white);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.popup-close-btn-holder {
+  display: flex;
+  justify-content: end;
+}
+
+.popup-close-btn-holder img {
+  cursor: pointer;
+}
+
+.popup-tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 1.2rem;
+  width: 100%;
+}
+
+.popup-feature {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-body);
+}
+
+.popup-image {
+  width: 100%;
+}
+
+.popup-info-holder {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.popup-description {
+  width: inherit;
+  height: fit-content;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--color-body);
+}
+
+.popup-btn-holder {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  justify-content: space-around;
+}
+
+.popup-btn {
+  color: var(--color-body);
+  background-color: var(--color-sccent);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border: 1px solid var(--color-sccent);
+}
+
+.popup-btn:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-sccent);
+  border: 1px solid var(--color-sccent);
+}
+
+@media screen and (min-width: 768px) {
+  .popup-info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 2rem;
+  }
+
+  .popup-btn-holder {
+    justify-content: left;
+    column-gap: 2rem;
+  }
+
+  .popup-holder {
+    padding: 3rem;
+    margin-top: 10rem;
+  }
+
+  .popup-info-holder {
+    row-gap: 4rem;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 364px) {
+  .popup-holder {
+    margin-top: 20rem;
+  }
+}
+
 /* Work section */
 
 .work-section-container {
