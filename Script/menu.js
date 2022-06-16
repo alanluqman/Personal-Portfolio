@@ -95,23 +95,22 @@ const checkEmail = () => {
   let valid = false;
   const email = emailEl.value.trim();
   if (!isEmailValid(email)) {
-    document.querySelector('#errorCheck').innerHTML= '* Invalid Email entered ! please Enter valid email.';
+    document.querySelector('#errorCheck').innerHTML = '* Invalid Email entered ! please Enter valid email.';
   } else {
-    document.querySelector('#errorCheck').innerHTML= '';
+    document.querySelector('#errorCheck').innerHTML = '';
     valid = true;
   }
   return valid;
 };
 const form = document.querySelector('#contact_me');
-form.addEventListener('submit', function (e) {
-    // prevent the form from submitting
-    e.preventDefault();
-    // validate forms
-    let isEmailValid = checkEmail();
-    let isFormValid = isEmailValid;
-    // submit to the server if the form is valid
-    if (isFormValid) {
-      console.log('form submited');
-      form.submit();
-    }
+form.addEventListener('submit', (e) => {
+  // prevent the form from submitting
+  e.preventDefault();
+  // validate forms
+  const isEmailValid = checkEmail();
+  const isFormValid = isEmailValid;
+  // submit to the server if the form is valid
+  if (isFormValid) {
+    form.submit();
+  }
 });
