@@ -62,7 +62,7 @@ const projects = [
     featureList: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://alanluqman.github.io/Personal-Portfolio/',
     seeSource: 'https://github.com/alanluqman/Personal-Portfolio',
-  }
+  },
 ];
 const popUpWindow = document.querySelector('.popup-window');
 function popUp(index) {
@@ -74,7 +74,7 @@ function popUp(index) {
   document.querySelector('#seeSourcePopup').href = projects[index].seeSource;
 }
 function popUpClose() {
-popUpWindow.classList.remove('popUp');
+  popUpWindow.classList.remove('popUp');
 }
 const closePopUpWindow = document.querySelector('#closePopup');
 closePopUpWindow.addEventListener('click', popUpClose);
