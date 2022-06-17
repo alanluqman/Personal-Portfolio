@@ -111,5 +111,28 @@ form.addEventListener('submit', (e) => {
   // submit to the server if the form is valid
   if (isEmailValid) {
     form.submit();
+    Storage.remove('form_data');
   }
 });
+// Local storage
+let dataStorage = {
+  full_name:'alan',
+  email_address:'alan@yahoo',
+  message_text:'hi there'
+};
+function setStyles() {
+  var fullName = JSON.parse(localStorage.getItem('form_data'))['full_name'];
+  var emailAddress = JSON.parse(localStorage.getItem('form_data'))['email_address'];
+  var messageText = JSON.parse(localStorage.getItem('form_data'))['message_text'];
+  document.querySelector('#fullname').value =''+ fullName;
+  document.querySelector('#email').value = emailAddress;
+  document.querySelector('#message').value = messageText;
+}
+ setStyles();
+function populateStorage() {
+  dataStorage.full_name=document.querySelector('#fullname').value;
+  dataStorage.email_address=document.querySelector('#email').value;
+  dataStorage.message_text=document.querySelector('#message').value;
+  const storedData = JSON.stringify(dataStorage);
+  localStorage.setItem('form_data',storedData);
+}
