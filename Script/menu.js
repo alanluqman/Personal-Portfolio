@@ -111,19 +111,18 @@ form.addEventListener('submit', (e) => {
   // submit to the server if the form is valid
   if (isEmailValid) {
     form.submit();
-    Storage.remove('form_data');
   }
 });
 // Local storage
 let dataStorage = {
-  full_name:'alan',
-  email_address:'alan@yahoo',
-  message_text:'hi there'
+  full_name:'',
+  email_address:'',
+  message_text:''
 };
 function setStyles() {
-  var fullName = JSON.parse(localStorage.getItem('form_data'))['full_name'];
-  var emailAddress = JSON.parse(localStorage.getItem('form_data'))['email_address'];
-  var messageText = JSON.parse(localStorage.getItem('form_data'))['message_text'];
+  let fullName = JSON.parse(localStorage.getItem('form_data'))['full_name'];
+  let emailAddress = JSON.parse(localStorage.getItem('form_data'))['email_address'];
+  let messageText = JSON.parse(localStorage.getItem('form_data'))['message_text'];
   document.querySelector('#fullname').value =''+ fullName;
   document.querySelector('#email').value = emailAddress;
   document.querySelector('#message').value = messageText;
@@ -136,3 +135,7 @@ function populateStorage() {
   const storedData = JSON.stringify(dataStorage);
   localStorage.setItem('form_data',storedData);
 }
+
+ document.querySelector('#fullname').addEventListener('change',populateStorage);
+ document.querySelector('#email').addEventListener('change',populateStorage);
+ document.querySelector('#message').addEventListener('change',populateStorage);
