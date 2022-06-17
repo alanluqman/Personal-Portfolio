@@ -119,14 +119,16 @@ const dataStorage = {
   email_address: '',
   message_text: '',
 };
+
 function setStyles() {
   const fullName = JSON.parse(localStorage.getItem('form_data')).full_name;
-  const emailAddress = JSON.parse(localStorage.getItem('form_data')).email_address;
-  const messageText = JSON.parse(localStorage.getItem('form_data')).message_text;
   document.querySelector('#fullname').value = fullName;
+  const emailAddress = JSON.parse(localStorage.getItem('form_data')).email_address;
   document.querySelector('#email').value = emailAddress;
+  const messageText = JSON.parse(localStorage.getItem('form_data')).message_text;
   document.querySelector('#message').value = messageText;
 }
+
 setStyles();
 function populateStorage() {
   dataStorage.full_name = document.querySelector('#fullname').value;
@@ -134,6 +136,7 @@ function populateStorage() {
   dataStorage.message_text = document.querySelector('#message').value;
   const storedData = JSON.stringify(dataStorage);
   localStorage.setItem('form_data', storedData);
+  setStyles();
 }
 
 document.querySelector('#fullname').addEventListener('change', populateStorage);
