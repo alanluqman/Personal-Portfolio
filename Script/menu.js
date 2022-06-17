@@ -114,28 +114,28 @@ form.addEventListener('submit', (e) => {
   }
 });
 // Local storage
-let dataStorage = {
-  full_name:'',
-  email_address:'',
-  message_text:''
+const dataStorage = {
+  full_name: '',
+  email_address: '',
+  message_text: '',
 };
 function setStyles() {
-  let fullName = JSON.parse(localStorage.getItem('form_data'))['full_name'];
-  let emailAddress = JSON.parse(localStorage.getItem('form_data'))['email_address'];
-  let messageText = JSON.parse(localStorage.getItem('form_data'))['message_text'];
-  document.querySelector('#fullname').value =''+ fullName;
+  const fullName = JSON.parse(localStorage.getItem('form_data')).full_name;
+  const emailAddress = JSON.parse(localStorage.getItem('form_data')).email_address;
+  const messageText = JSON.parse(localStorage.getItem('form_data')).message_text;
+  document.querySelector('#fullname').value = fullName;
   document.querySelector('#email').value = emailAddress;
   document.querySelector('#message').value = messageText;
 }
- setStyles();
+setStyles();
 function populateStorage() {
-  dataStorage.full_name=document.querySelector('#fullname').value;
-  dataStorage.email_address=document.querySelector('#email').value;
-  dataStorage.message_text=document.querySelector('#message').value;
+  dataStorage.full_name = document.querySelector('#fullname').value;
+  dataStorage.email_address = document.querySelector('#email').value;
+  dataStorage.message_text = document.querySelector('#message').value;
   const storedData = JSON.stringify(dataStorage);
-  localStorage.setItem('form_data',storedData);
+  localStorage.setItem('form_data', storedData);
 }
 
- document.querySelector('#fullname').addEventListener('change',populateStorage);
- document.querySelector('#email').addEventListener('change',populateStorage);
- document.querySelector('#message').addEventListener('change',populateStorage);
+document.querySelector('#fullname').addEventListener('change', populateStorage);
+document.querySelector('#email').addEventListener('change', populateStorage);
+document.querySelector('#message').addEventListener('change', populateStorage);
