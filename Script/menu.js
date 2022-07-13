@@ -17,9 +17,9 @@ const projects = [
     seeSource: 'https://github.com/alanluqman/Personal-Portfolio',
   },
   {
-    title: 'Webrush',
+    title: 'WeBrush',
     description: 'This is an eCommerce website, customers can visit it and choose their desired design.',
-    image: './images/weBrush.webp',
+    image: './images/webrush.webp',
     featureList: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://alanluqman.github.io/WeBrush/',
     seeSource: 'https://github.com/alanluqman/WeBrush',
