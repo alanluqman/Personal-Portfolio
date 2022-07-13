@@ -17,12 +17,12 @@ const projects = [
     seeSource: 'https://github.com/alanluqman/Personal-Portfolio',
   },
   {
-    title: 'First Project',
-    description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply ummy text of the printing and typesetting industry. Lorem Ipsum has been the standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.',
-    image: 'images/project.jpg',
+    title: 'WeBrush',
+    description: 'This is an eCommerce website, customers can visit it and choose their desired design.',
+    image: 'images/weBrush.jpg',
     featureList: ['html', 'bootstrap', 'Ruby'],
-    seeLive: 'https://alanluqman.github.io/Personal-Portfolio/',
-    seeSource: 'https://github.com/alanluqman/Personal-Portfolio',
+    seeLive: 'https://alanluqman.github.io/WeBrush/',
+    seeSource: 'https://github.com/alanluqman/WeBrush',
   },
   {
     title: 'Second Project',
