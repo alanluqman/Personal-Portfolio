@@ -19,7 +19,7 @@ const projects = [
   {
     title: 'WeBrush',
     description: 'This is an eCommerce website, customers can visit it and choose their desired design.',
-    image: 'images/weBrush.jpg',
+    image: './images/weBrush.JPG',
     featureList: ['html', 'bootstrap', 'Ruby'],
     seeLive: 'https://alanluqman.github.io/WeBrush/',
     seeSource: 'https://github.com/alanluqman/WeBrush',
