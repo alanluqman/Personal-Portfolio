@@ -410,6 +410,7 @@ body {
 
 .popup-image {
   width: 100%;
+  max-width: 34rem;
 }
 
 .popup-info-holder {
